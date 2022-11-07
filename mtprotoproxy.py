@@ -138,7 +138,7 @@ def init_config():
     # load advanced settings
 
     # use middle proxy, necessary to show ad
-    conf_dict.setdefault("USE_MIDDLE_PROXY", len(conf_dict["AD_TAG"]) == 16)
+    conf_dict.setdefault("USE_MIDDLE_PROXY", len(conf_dict["AD_TAG"]) == 32)
 
     # if IPv6 avaliable, use it by default
     conf_dict.setdefault("PREFER_IPV6", socket.has_ipv6)
